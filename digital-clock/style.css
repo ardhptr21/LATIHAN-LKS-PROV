@@ -1,0 +1,39 @@
+@import url('https://fonts.cdnfonts.com/css/seven-segment');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#timer {
+  font-size: 16rem;
+  font-family: 'Seven Segment', sans-serif;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+.btn.btn__start {
+  background-color: blue;
+  color: white;
+}
+.btn.btn__stop {
+  background-color: red;
+  color: white;
+  margin: 0 1rem;
+}
+.btn.btn__reset {
+  background-color: #ffe100;
+}

@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  animation: spin 2s ease-in-out infinite;
+}
+
+.loading > div {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.loading__1 {
+  background-color: #19a68c;
+}
+
+.loading__2 {
+  background-color: #f63d3a;
+}
+
+.loading__3 {
+  background-color: #fda543;
+}
+
+.loading__4 {
+  background-color: #193b48;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    gap: 0.5rem;
+  }
+  50% {
+    transform: rotate(180deg);
+    gap: 2rem;
+  }
+  100% {
+    transform: rotate(360deg);
+    gap: 0.5rem;
+  }
+}
